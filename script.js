@@ -1,6 +1,5 @@
 console.log("Welcome TicTacToe")
-var audio = document.createElement('audio');
-audio.setAttribute('src' , 'music.mp3');
+let music = new Audio("music.mp3")
 let audioTurn = new Audio("ting.mp3")
 let gameover = new Audio("gameover.mp3")
 let isgameover = false;
@@ -41,8 +40,8 @@ const checkWin = () => {
 }
 
 //game logic
-audio.play()
-audio.volume = 0.03;
+music.play(). autoplay;
+music.volume = 0.03;
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     let boxtext = element.querySelector('.boxtext');
